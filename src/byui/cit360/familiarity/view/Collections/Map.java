@@ -47,7 +47,6 @@ public class Map {
                 + "\nA: Add more to my map"
                 + "\nM: Modify something on my map"
                 + "\nR: Remove something from my map"
-                + "\nS: Sort my map"
                 + "\nC: Return to the CollectionsDemo Menu"
                 + "\nX: Exit"
                 + "\n"
