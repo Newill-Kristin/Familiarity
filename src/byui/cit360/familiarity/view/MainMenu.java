@@ -18,8 +18,8 @@ public class MainMenu {
         //Display mainMenu
         System.out.print("\n"
                 + "\nFamiliarity to Demonstrate: "
-                + "\nC: CollectionsDemo"
-                + "\nT: ThreadsDemo, Executors, and Runnables"
+                + "\nC: Collections"
+                + "\nT: Threads, Executors, and Runnables"
                 + "\nA: Application Controller Pattern"
                 + "\nM: MVC"
                 + "\nH: Hibernate"

@@ -21,10 +21,10 @@ public class Set {
         Scanner input = new Scanner(System.in);
         String thing = input.nextLine();
         if (demoSet1.add(thing)) {
-            System.out.println(thing + " is added to the set");
+            System.out.println(thing + " has been added to the set");
         }
         if (!demoSet1.add(thing)) {
-            System.out.println(thing + " is already added to the set");
+            System.out.println(thing + " was previously added to the set");
         }
 
         System.out.println("Your set contains:");
