@@ -7,7 +7,7 @@ import byui.cit360.familiarity.view.ThreadMenuView;
  */
 public class ThreadsDemo {
 
-    public static void collection() {
+    public static void threads() {
 
         //Create Menu
         ThreadMenuView threadMenuView = new ThreadMenuView();

@@ -1,6 +1,6 @@
 package byui.cit360.familiarity.view;
 
-import byui.cit360.familiarity.view.Collections.*;
+import byui.cit360.familiarity.model.Collections.*;
 
 
 import java.util.Scanner;

@@ -1,9 +1,8 @@
 package byui.cit360.familiarity.view;
 
-import byui.cit360.familiarity.view.Collections.*;
-import byui.cit360.familiarity.view.Threads.Executors;
-import byui.cit360.familiarity.view.Threads.Runnables;
-import byui.cit360.familiarity.view.Threads.Threads;
+import byui.cit360.familiarity.model.Threads.Executors;
+import byui.cit360.familiarity.model.Threads.Runnables;
+import byui.cit360.familiarity.model.Threads.Threads;
 
 import java.util.Scanner;
 
@@ -73,7 +72,7 @@ public class ThreadMenuView {
     }
 
     private void executor() {
-        System.out.println("\n*** Executor Demo ***");
+        //System.out.println("\n*** Executor Demo ***");
 
         Executors executorsDemo = new Executors();
 
@@ -82,7 +81,7 @@ public class ThreadMenuView {
     }
 
     private void runnable() {
-        System.out.println("\n*** Runnable Demo ***");
+        //System.out.println("\n*** Runnable Demo ***");
 
         Runnables runnablesDemo = new Runnables();
 

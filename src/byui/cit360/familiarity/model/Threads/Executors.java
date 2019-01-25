@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.view.Threads;
+package byui.cit360.familiarity.model.Threads;
 
 import byui.cit360.familiarity.view.ThreadMenuView;
 
@@ -47,6 +47,14 @@ public class Executors {
     }
 
     private void demo() {
+
+        //Trigger New Demo
+        ExecutorDemoRun aDemo = new ExecutorDemoRun();
+
+        //Run Demo
+        aDemo.main();
+
+        this.runExecutorsMenu();
 
     }
 

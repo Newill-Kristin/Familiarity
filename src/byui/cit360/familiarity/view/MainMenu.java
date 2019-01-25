@@ -1,6 +1,7 @@
 package byui.cit360.familiarity.view;
 
 import byui.cit360.familiarity.control.CollectionsDemo;
+import byui.cit360.familiarity.control.ThreadsDemo;
 
 import java.util.Scanner;
 
@@ -93,8 +94,11 @@ public class MainMenu {
     }
 
     private void thread() {
-        System.out.println("\n*** ThreadsDemo, Executors, and Runnables Demo ***");
+        //System.out.println("\n*** ThreadsDemo, Executors, and Runnables Demo ***");
 
+        ThreadsDemo threadsDemo = new ThreadsDemo();
+
+        threadsDemo.threads();
 
     }
 

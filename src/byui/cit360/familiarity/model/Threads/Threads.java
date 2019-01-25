@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.view.Threads;
+package byui.cit360.familiarity.model.Threads;
 
 import byui.cit360.familiarity.view.ThreadMenuView;
 
@@ -48,7 +48,14 @@ public class Threads {
 
     private void demo() {
 
+        //Trigger New Demo
+        ThreadDemo aDemo = new ThreadDemo();
 
+        //Run Demo
+        aDemo.run();
+
+
+        this.runThreadMenu();
 
     }
 
@@ -63,5 +70,6 @@ public class Threads {
     private void exit () {
         System.exit(0);
     }
+
 
 }

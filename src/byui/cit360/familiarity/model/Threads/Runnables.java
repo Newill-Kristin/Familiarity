@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.view.Threads;
+package byui.cit360.familiarity.model.Threads;
 
 import byui.cit360.familiarity.view.ThreadMenuView;
 
@@ -47,6 +47,14 @@ public class Runnables {
     }
 
     private void demo() {
+
+        //Trigger New Demo
+        RunnableDemo aDemo = new RunnableDemo();
+
+        //Run Demo
+        aDemo.run();
+
+        this.runRunnablesMenu();
 
     }
 

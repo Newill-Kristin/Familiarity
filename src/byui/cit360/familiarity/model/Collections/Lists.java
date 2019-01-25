@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.view.Collections;
+package byui.cit360.familiarity.model.Collections;
 
 import byui.cit360.familiarity.view.ColMenuView;
 
