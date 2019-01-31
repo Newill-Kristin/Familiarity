@@ -1,8 +1,9 @@
-package byui.cit360.familiarity.view;
+package byui.cit360.familiarity.Threads;
 
-import byui.cit360.familiarity.model.Threads.Executors;
-import byui.cit360.familiarity.model.Threads.Runnables;
-import byui.cit360.familiarity.model.Threads.Threads;
+import byui.cit360.familiarity.Threads.Executors;
+import byui.cit360.familiarity.Threads.Runnables;
+import byui.cit360.familiarity.Threads.Threads;
+import byui.cit360.familiarity.view.MainMenu;
 
 import java.util.Scanner;
 
@@ -92,7 +93,7 @@ public class ThreadMenuView {
     private void retmm() {
         //System.out.println("\n*** Main Menu ***");
 
-        MainMenu  mm = new MainMenu();
+        MainMenu mm = new MainMenu();
 
         //Display Map Demo
         mm.mainMenu();

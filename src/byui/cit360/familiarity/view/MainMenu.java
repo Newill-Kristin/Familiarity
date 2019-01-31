@@ -1,8 +1,7 @@
 package byui.cit360.familiarity.view;
 
-import byui.cit360.familiarity.control.CollectionsDemo;
-import byui.cit360.familiarity.control.ThreadsDemo;
-
+import byui.cit360.familiarity.Collections.CollectionsDemo;
+import byui.cit360.familiarity.Threads.ThreadsDemo;
 import java.util.Scanner;
 
 /**

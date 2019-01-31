@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.model.Threads;
+package byui.cit360.familiarity.Threads;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

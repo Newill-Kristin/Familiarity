@@ -1,6 +1,4 @@
-package byui.cit360.familiarity.control;
-
-import byui.cit360.familiarity.view.ThreadMenuView;
+package byui.cit360.familiarity.Threads;
 
 /**
  * Created by Kristin Newill (aingealfire) on 1/22/2019.

@@ -1,11 +1,11 @@
-package byui.cit360.familiarity.model.Threads;
+package byui.cit360.familiarity.Threads;
 
 /**
  * Created by Kristin Newill (aingealfire) on 1/23/2019.
  */
 public class RunnableDemo implements Runnable {
 
-    public static void main(String[] args) {
+    public static void runTest() {
 
         System.out.println("Starting inside : " + Thread.currentThread().getName() + "\n");
 
@@ -29,7 +29,7 @@ public class RunnableDemo implements Runnable {
     public void run() {
 
         System.out.println("This thread is : " + Thread.currentThread().getName());
-    }
 
+    }
 
 }

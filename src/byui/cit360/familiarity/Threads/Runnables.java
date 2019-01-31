@@ -1,6 +1,4 @@
-package byui.cit360.familiarity.model.Threads;
-
-import byui.cit360.familiarity.view.ThreadMenuView;
+package byui.cit360.familiarity.Threads;
 
 import java.util.Scanner;
 
@@ -52,7 +50,7 @@ public class Runnables {
         RunnableDemo aDemo = new RunnableDemo();
 
         //Run Demo
-        aDemo.run();
+        aDemo.runTest();
 
         this.runRunnablesMenu();
 

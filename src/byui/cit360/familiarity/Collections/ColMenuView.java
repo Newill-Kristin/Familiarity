@@ -1,6 +1,6 @@
-package byui.cit360.familiarity.view;
+package byui.cit360.familiarity.Collections;
 
-import byui.cit360.familiarity.model.Collections.*;
+import byui.cit360.familiarity.view.MainMenu;
 
 
 import java.util.Scanner;
@@ -125,7 +125,7 @@ public class ColMenuView {
     private void retmm() {
         //System.out.println("\n*** Main Menu ***");
 
-        MainMenu  mm = new MainMenu();
+        MainMenu mm = new MainMenu();
 
         //Display Map Demo
         mm.mainMenu();

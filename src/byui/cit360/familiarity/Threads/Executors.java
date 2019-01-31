@@ -1,17 +1,15 @@
-package byui.cit360.familiarity.model.Threads;
-
-import byui.cit360.familiarity.view.ThreadMenuView;
+package byui.cit360.familiarity.Threads;
 
 import java.util.Scanner;
 
 /**
  * Created by Kristin Newill (aingealfire) on 1/22/2019.
  */
-public class Threads {
+public class Executors {
 
     private static Scanner input = new Scanner(System.in);
 
-    public void runThreadMenu() {
+    public void runExecutorsMenu() {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -41,7 +39,7 @@ public class Threads {
             break;
             default:
                 System.out.print("\n*** Invalid Entry *** Try Again: ");
-                this.runThreadMenu();
+                this.runExecutorsMenu();
                 break;
         }
     }
@@ -49,13 +47,12 @@ public class Threads {
     private void demo() {
 
         //Trigger New Demo
-        ThreadDemo aDemo = new ThreadDemo();
+        ExecutorDemoRun aDemo = new ExecutorDemoRun();
 
         //Run Demo
-        aDemo.run();
+        aDemo.main();
 
-
-        this.runThreadMenu();
+        this.runExecutorsMenu();
 
     }
 
@@ -70,6 +67,5 @@ public class Threads {
     private void exit () {
         System.exit(0);
     }
-
 
 }

@@ -1,7 +1,5 @@
-package byui.cit360.familiarity.control;
+package byui.cit360.familiarity.Collections;
 
-
-import byui.cit360.familiarity.view.ColMenuView;
 
 /**
  * Created by Kristin Newill (aingealfire) on 1/16/2019.

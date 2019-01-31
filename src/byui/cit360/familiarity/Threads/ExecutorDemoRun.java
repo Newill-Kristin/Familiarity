@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.model.Threads;
+package byui.cit360.familiarity.Threads;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

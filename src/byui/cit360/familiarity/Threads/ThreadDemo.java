@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.model.Threads;
+package byui.cit360.familiarity.Threads;
 
 /**
  * Created by Kristin Newill (aingealfire) on 1/23/2019.
