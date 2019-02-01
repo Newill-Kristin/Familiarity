@@ -12,14 +12,11 @@ public class MvcDemo {
     public void mvcDemo() {
 
         //Force Add contact
-        Mvc model = hardSetContact();
-
-        model = enterContact();
+        Mvc model = enterContact();
+        //model = hardSetContact();
 
         //Create a view : to write student details on console
         MvcMenuView view = new MvcMenuView();
-
-
 
         MvcDemoController controller = new MvcDemoController(model, view);
         controller.updateView();
@@ -30,7 +27,7 @@ public class MvcDemo {
         controller.updateView();
     }
 
-
+/*
     //Force Set Contact(s)
     private static Mvc hardSetContact() {
         Mvc contact1 = new Mvc(){};
@@ -43,9 +40,8 @@ public class MvcDemo {
         contact1.setZip("54321");
         contact1.setTele("1234567890");
         return contact1;
-
     }
-
+*/
 
     //Enter Contact
     public static Mvc enterContact () {
