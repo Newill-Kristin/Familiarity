@@ -1,4 +1,4 @@
-package byui.cit360.familiarity.model.Mvc;
+package byui.cit360.familiarity.Mvc;
 
 /**
  * Created by Kristin Newill (aingealfire) on 1/29/2019.
@@ -13,7 +13,6 @@ public class Mvc {
     private String state;
     private String zip;
     private String tele;
-
 
     public String getFirstName() {
         return firstName;
@@ -78,6 +77,7 @@ public class Mvc {
     public void setTele(String tele) {
         this.tele = tele;
     }
+
 
 
 }

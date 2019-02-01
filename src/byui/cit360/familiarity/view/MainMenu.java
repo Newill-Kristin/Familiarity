@@ -1,7 +1,9 @@
 package byui.cit360.familiarity.view;
 
 import byui.cit360.familiarity.Collections.CollectionsDemo;
+import byui.cit360.familiarity.Mvc.MvcMenuView;
 import byui.cit360.familiarity.Threads.ThreadsDemo;
+
 import java.util.Scanner;
 
 /**
@@ -20,11 +22,11 @@ public class MainMenu {
                 + "\nFamiliarity to Demonstrate: "
                 + "\nC: Collections"
                 + "\nT: Threads, Executors, and Runnables"
-                + "\nA: Application Controller Pattern"
                 + "\nM: MVC"
                 + "\nH: Hibernate"
                 + "\nQ: QCJSON & JSON"
                 + "\nN: Android HttpUrlConnection"
+                + "\nA: Application Controller Pattern"
                 + "\nS: Servlets"
                 + "\nJ: JUnit & System Level Tests"
                 + "\nX: Exit"
@@ -45,10 +47,6 @@ public class MainMenu {
                 this.thread(); // Trigger ThreadsDemo
             }
             break;
-            case "A": {
-                this.acp(); // Trigger ACP
-            }
-            break;
             case "M": {
                 this.mvc(); // Trigger MVC
             }
@@ -63,6 +61,10 @@ public class MainMenu {
             break;
             case "N": {
                 this.android(); // Trigger Android HttpUrlConnection
+            }
+            break;
+            case "A": {
+                this.acp(); // Trigger ACP
             }
             break;
             case "S": {
@@ -101,13 +103,12 @@ public class MainMenu {
 
     }
 
-    private void acp() {
-        System.out.println("\n*** Application Controller Pattern Demo ***");
-
-    }
-
     private void mvc() {
-        System.out.println("\n*** MVC Demo ***");
+        //System.out.println("\n*** MVC Demo ***");
+
+        MvcMenuView mvc1 = new MvcMenuView();
+
+        mvc1.runMVCMenu();
 
     }
 
@@ -123,6 +124,11 @@ public class MainMenu {
 
     private void android() {
         System.out.println("\n*** Android HttpUrlConnection Demo ***");
+
+    }
+
+    private void acp() {
+        System.out.println("\n*** Application Controller Pattern Demo ***");
 
     }
 
