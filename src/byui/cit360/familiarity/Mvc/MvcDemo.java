@@ -22,8 +22,8 @@ public class MvcDemo {
         controller.updateView();
 
         //update model data
-        System.out.println("\n If I update the contact I can make it: \n");
-        controller.setFirstName("George");
+        System.out.println("\n By adding the code to update the contact I can make it: \n");
+        controller.setFirstName("Fred");
         controller.updateView();
     }
 
