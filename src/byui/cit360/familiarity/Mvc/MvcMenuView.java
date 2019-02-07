@@ -20,6 +20,53 @@ public class MvcMenuView {
 
     }
 
+    //Enter Contact
+    public static Mvc enterContact () {
+
+        Scanner add = new Scanner(System.in);
+
+        System.out.print("Please enter your First Name: ");
+        String addfirst = add.nextLine();
+
+        System.out.print("Please enter your Last Name: ");
+        String addlast = add.nextLine();
+
+        System.out.print("Please enter the first line of your address: ");
+        String addadd1 = add.nextLine();
+
+        System.out.print("Please enter a second line of your address (if any): ");
+        String addadd2 = add.nextLine();
+
+        System.out.print("Please enter your city: ");
+        String addcity = add.nextLine();
+
+        System.out.print("Please enter your state: ");
+        String addstate = add.nextLine();
+
+        System.out.print("Please enter your zipcode: ");
+        String addzip = add.nextLine();
+
+        System.out.print("Please enter your phone number: ");
+        String addtele = add.nextLine();
+
+
+        //Add Contact(s)
+        Mvc contact = new Mvc(){};
+        contact.setFirstName(addfirst);
+        contact.setLastName(addlast);
+        contact.setAddressLine1(addadd1);
+        contact.setAddressLine2(addadd2);
+        contact.setCity(addcity);
+        contact.setState(addstate);
+        contact.setZip(addzip);
+        contact.setTele(addtele);
+        return contact;
+
+
+    }
+
+
+
     private static Scanner input = new Scanner(System.in);
 
     public void runMVCMenu() {

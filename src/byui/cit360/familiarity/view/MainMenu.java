@@ -1,6 +1,7 @@
 package byui.cit360.familiarity.view;
 
 import byui.cit360.familiarity.Collections.CollectionsDemo;
+import byui.cit360.familiarity.Hibernate.HibernateMenuView;
 import byui.cit360.familiarity.Mvc.MvcMenuView;
 import byui.cit360.familiarity.Threads.ThreadsDemo;
 
@@ -114,6 +115,10 @@ public class MainMenu {
 
     private void hibernate() {
         System.out.println("\n*** Hibernate Demo ***");
+
+        //HibernateMenuView hib1 = new HibernateMenuView();
+
+        //hib1.runHibMenu();
 
     }
 
