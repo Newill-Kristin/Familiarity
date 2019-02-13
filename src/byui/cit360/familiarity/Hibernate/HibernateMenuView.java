@@ -11,7 +11,7 @@ public class HibernateMenuView {
 
     private static Scanner input = new Scanner(System.in);
 
-    public static void runHibMenu() {
+    public void runHibMenu() {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -67,10 +67,9 @@ public class HibernateMenuView {
         mm.mainMenu();
     }
 
-    private void exit () {
+    private void exit() {
         System.exit(0);
     }
-
 
 
 }

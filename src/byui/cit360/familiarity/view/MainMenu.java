@@ -114,16 +114,16 @@ public class MainMenu {
     }
 
     private void hibernate() {
-        System.out.println("\n*** Hibernate Demo ***");
+        //System.out.println("\n*** Hibernate Demo ***");
 
-        //HibernateMenuView hib1 = new HibernateMenuView();
+        HibernateMenuView hib1 = new HibernateMenuView();
 
-        //hib1.runHibMenu();
+        hib1.runHibMenu();
 
     }
 
     private void json() {
-        System.out.println("\n*** Hibernate Demo ***");
+        System.out.println("\n*** JSON Demo ***");
 
     }
 
