@@ -29,13 +29,10 @@ public class ServletDemo extends HttpServlet {
             String zip = request.getParameter("zip");
             String tele = request.getParameter("tele");
         post.println("<h1>You Entered Contact Info For:</h1>");
-        post.println("<p>\n" +
-                "First Name: " + firstName + " Last Name:" + lastName + "\n" +
-                "Address: " + add1 + "\n" +
-                "         " + add2 + "\n" +
-                "         " + city + ", " + state + " " + zip + "\n" +
-                "Telephone: " + tele + "\n" +
-                "</p>");
+        post.println("<p>Name: " + firstName + "&nbsp;" + lastName + "</p>" +
+                "<p>Address: " + add1 + "&nbsp;" + add2 + "</p>" +
+                "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + city + ", " + state + " " + zip + "</p>" +
+                "<p>Telephone: " + tele + "</p>");
         post.println("</body></html>");
 
     }
