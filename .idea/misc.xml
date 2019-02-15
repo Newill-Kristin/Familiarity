@@ -4,11 +4,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/src/byui/cit360/familiarity/Servlet/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/ServletDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/src/byui/cit360/familiarity/Servlet1/pom.xml" />
       </set>
     </option>
   </component>
