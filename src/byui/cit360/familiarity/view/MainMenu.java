@@ -68,10 +68,6 @@ public class MainMenu {
                 this.acp(); // Trigger ACP
             }
             break;
-            case "S": {
-                this.servlet(); // Trigger Servlets
-            }
-            break;
             case "J": {
                 this.junit(); // Trigger JUnit
             }
@@ -134,11 +130,6 @@ public class MainMenu {
 
     private void acp() {
         System.out.println("\n*** Application Controller Pattern Demo ***");
-
-    }
-
-    private void servlet() {
-        System.out.println("\n*** Servlet Demo ***");
 
     }
 
