@@ -23,6 +23,7 @@
       <root url="jar://$PROJECT_DIR$/lib/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/junit/junit/4.12/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/java-json.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

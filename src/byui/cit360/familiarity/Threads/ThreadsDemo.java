@@ -5,7 +5,7 @@ package byui.cit360.familiarity.Threads;
  */
 public class ThreadsDemo {
 
-    public static void threads() {
+    public static void threads() throws Exception {
 
         //Create Menu
         ThreadMenuView threadMenuView = new ThreadMenuView();

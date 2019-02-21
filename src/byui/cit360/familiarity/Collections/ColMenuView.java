@@ -15,7 +15,7 @@ public class ColMenuView {
 
     // Output options to work with - List, Set, Queue, Tree, Map
 
-    public void collectionMenu() {
+    public void collectionMenu() throws Exception {
 
         //Display Menu
         System.out.print("\n"
@@ -72,7 +72,7 @@ public class ColMenuView {
     }
 
 
-    private void lists() {
+    private void lists() throws Exception {
         //System.out.println("\n*** Lists Demo ***");
 
         //Create Lists Demo
@@ -82,7 +82,7 @@ public class ColMenuView {
         listDemo.listCol();
     }
 
-    private void set() {
+    private void set() throws Exception {
         //System.out.println("\n*** Set Demo ***");
 
         //Create Set Demo
@@ -92,7 +92,7 @@ public class ColMenuView {
         setDemo.setCol();
     }
 
-    private void queue() {
+    private void queue() throws Exception {
         //System.out.println("\n*** Queue Demo ***");
 
         //Create Queue Demo
@@ -102,7 +102,7 @@ public class ColMenuView {
         queueDemo.queueCol();
     }
 
-    private void tree() {
+    private void tree() throws Exception {
         //System.out.println("\n*** Tree Demo ***");
 
         //Create Tree Demo
@@ -112,7 +112,7 @@ public class ColMenuView {
         treeDemo.treeCol();
     }
 
-    private void map() {
+    private void map() throws Exception {
         //System.out.println("\n*** Map Demo ***");
 
         //Create Map Demo
@@ -122,7 +122,7 @@ public class ColMenuView {
         mapDemo.mapCol();
     }
 
-    private void retmm() {
+    private void retmm() throws Exception {
         //System.out.println("\n*** Main Menu ***");
 
         MainMenu mm = new MainMenu();

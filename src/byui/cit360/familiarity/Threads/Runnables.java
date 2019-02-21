@@ -9,7 +9,7 @@ public class Runnables {
 
     private static Scanner input = new Scanner(System.in);
 
-    public void runRunnablesMenu() {
+    public void runRunnablesMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -44,7 +44,7 @@ public class Runnables {
         }
     }
 
-    private void demo() {
+    private void demo() throws Exception {
 
         //Trigger New Demo
         RunnableDemo aDemo = new RunnableDemo();
@@ -56,7 +56,7 @@ public class Runnables {
 
     }
 
-    private void retmenu () {
+    private void retmenu () throws Exception {
         //Create Menu
         ThreadMenuView threadMenuView = new ThreadMenuView();
 

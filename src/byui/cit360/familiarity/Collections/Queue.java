@@ -12,7 +12,7 @@ public class Queue {
     private static Scanner input = new Scanner(System.in);
     Deque demoQueue1 = new LinkedList();
 
-    public void queueCol() {
+    public void queueCol() throws Exception {
 
 
         System.out.println("Lets make a double ended queue! ");
@@ -29,7 +29,7 @@ public class Queue {
         this.runQueueMenu();
     }
 
-    public void runQueueMenu() {
+    public void runQueueMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -70,7 +70,7 @@ public class Queue {
     }
 
 
-    private void listadd() {
+    private void listadd() throws Exception {
         System.out.println("Do you want to add to the front or end of your deque?");
         System.out.print("Enter F for front or E for end:");
         String addfrbk = input.nextLine();
@@ -105,7 +105,7 @@ public class Queue {
         this.runQueueMenu();
     }
 
-    private void listrem() {
+    private void listrem() throws Exception {
         System.out.println("Do you want to remove the first or last item of your deque, or a specific item?");
         System.out.print("Enter F for front, E for end, or S for specific:");
         String addfrbk = input.nextLine();
@@ -141,7 +141,7 @@ public class Queue {
         this.runQueueMenu();
     }
 
-    private void retmenu() {
+    private void retmenu() throws Exception {
         //Create Menu
         ColMenuView colMenuView = new ColMenuView();
 

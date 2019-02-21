@@ -18,7 +18,6 @@ public class Contact {
     private String firstName;
     private String lastName;
     private String add1;
-    private String add2;
     private String city;
     private String state;
     private String zip;
@@ -46,14 +45,6 @@ public class Contact {
 
     public void setAdd1(String add1) {
         this.add1 = add1;
-    }
-
-    public String getAdd2() {
-        return add2;
-    }
-
-    public void setAdd2(String add2) {
-        this.add2 = add2;
     }
 
     public String getCity() {
@@ -96,7 +87,6 @@ public class Contact {
         return Objects.equals(firstName, contact.firstName) &&
                 Objects.equals(lastName, contact.lastName) &&
                 Objects.equals(add1, contact.add1) &&
-                Objects.equals(add2, contact.add2) &&
                 Objects.equals(city, contact.city) &&
                 Objects.equals(state, contact.state) &&
                 Objects.equals(zip, contact.zip) &&
@@ -105,7 +95,7 @@ public class Contact {
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, lastName, add1, add2, city, state, zip, tele);
+        return Objects.hash(firstName, lastName, add1, city, state, zip, tele);
     }
 
     private int id;

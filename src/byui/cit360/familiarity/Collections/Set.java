@@ -12,7 +12,7 @@ public class Set {
     private static Scanner input = new Scanner(System.in);
     HashSet<String> demoSet1 = new HashSet<>();
 
-    public void setCol() {
+    public void setCol() throws Exception {
 
         System.out.println("Lets make a set! ");
         System.out.print("Enter the first thing to add to your set: ");
@@ -33,7 +33,7 @@ public class Set {
     }
 
 
-    public void runSetMenu() {
+    public void runSetMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -73,7 +73,7 @@ public class Set {
         }
     }
 
-    private void setadd() {
+    private void setadd() throws Exception {
         System.out.print("Enter something to add to your set: ");
         Scanner additem = new Scanner(System.in);
         String addthing = additem.nextLine();
@@ -89,7 +89,7 @@ public class Set {
                 this.runSetMenu();
         }
 
-        private void setrem () {
+        private void setrem () throws Exception {
             System.out.print("Enter something to remove from your set: ");
             Scanner remitem = new Scanner(System.in);
             String remthing = remitem.nextLine();
@@ -103,7 +103,7 @@ public class Set {
             this.runSetMenu();
         }
 
-        private void retmenu () {
+        private void retmenu () throws Exception {
             //Create Menu
             ColMenuView colMenuView = new ColMenuView();
 

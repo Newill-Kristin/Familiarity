@@ -15,9 +15,7 @@ public class ThreadMenuView {
 
     private static Scanner input = new Scanner(System.in);
 
-    // Output options to work with - List, Set, Queue, Tree, Map
-
-    public void threadMenu() {
+    public void threadMenu() throws Exception {
 
         //Display Menu
         System.out.print("\n"
@@ -64,7 +62,7 @@ public class ThreadMenuView {
     }
 
 
-    private void thread() {
+    private void thread() throws Exception {
         //System.out.println("\n*** Threads Demo ***");
 
         Threads threadDemo = new Threads();
@@ -72,7 +70,7 @@ public class ThreadMenuView {
         threadDemo.runThreadMenu();
     }
 
-    private void executor() {
+    private void executor() throws Exception {
         //System.out.println("\n*** Executor Demo ***");
 
         Executors executorsDemo = new Executors();
@@ -81,7 +79,7 @@ public class ThreadMenuView {
 
     }
 
-    private void runnable() {
+    private void runnable() throws Exception {
         //System.out.println("\n*** Runnable Demo ***");
 
         Runnables runnablesDemo = new Runnables();
@@ -90,12 +88,11 @@ public class ThreadMenuView {
 
     }
 
-    private void retmm() {
+    private void retmm() throws Exception {
         //System.out.println("\n*** Main Menu ***");
 
         MainMenu mm = new MainMenu();
 
-        //Display Map Demo
         mm.mainMenu();
     }
 

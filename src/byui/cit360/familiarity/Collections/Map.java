@@ -11,7 +11,7 @@ public class Map {
     private static Scanner input = new Scanner(System.in);
     HashMap<String, String> demoMap1 = new HashMap<>();
 
-    public void mapCol() {
+    public void mapCol() throws Exception {
 
 
         System.out.println("Lets make a map! ");
@@ -38,7 +38,7 @@ public class Map {
         this.runMapMenu();
     }
 
-    public void runMapMenu() {
+    public void runMapMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -84,7 +84,7 @@ public class Map {
     }
 
 
-    private void mapadd() {
+    private void mapadd() throws Exception {
         System.out.print("For the next thing to add to your map");
         System.out.print("Enter a key for what you want to add: ");
         Scanner addmap1 = new Scanner(System.in);
@@ -107,7 +107,7 @@ public class Map {
         this.runMapMenu();
     }
 
-    private void mapmod() {
+    private void mapmod() throws Exception {
         System.out.print("Enter the key of what you to modify from your map: ");
         Scanner moditem = new Scanner(System.in);
         String modnum = moditem.nextLine();
@@ -125,7 +125,7 @@ public class Map {
         this.runMapMenu();
     }
 
-    private void maprem() {
+    private void maprem() throws Exception {
         System.out.print("Enter they key for the item you want to remove from your map: ");
         Scanner remitem = new Scanner(System.in);
         String remthing = remitem.nextLine();
@@ -140,7 +140,7 @@ public class Map {
         this.runMapMenu();
     }
 
-    private void retmenu() {
+    private void retmenu() throws Exception {
         //Create Menu
         ColMenuView colMenuView = new ColMenuView();
 

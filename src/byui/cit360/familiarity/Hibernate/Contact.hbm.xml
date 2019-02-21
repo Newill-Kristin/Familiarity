@@ -13,10 +13,6 @@
 
         </composite-id>
 
-        <property name="add2">
-            <column name="add2" sql-type="varchar(45)" length="45" not-null="true"/>
-        </property>
-
         <property name="firstName">
             <column name="firstName" sql-type="varchar(30)" length="30"/>
         </property>

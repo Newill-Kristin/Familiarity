@@ -11,7 +11,7 @@ public class Tree {
     private static Scanner input = new Scanner(System.in);
     TreeSet<String> demoTree1 = new TreeSet<>();
 
-    public void treeCol() {
+    public void treeCol() throws Exception {
 
 
         System.out.println("Lets make a TreeSet! ");
@@ -28,7 +28,7 @@ public class Tree {
         this.runListMenu();
     }
 
-    public void runListMenu() {
+    public void runListMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -69,7 +69,7 @@ public class Tree {
     }
 
 
-    private void treeadd() {
+    private void treeadd() throws Exception {
         System.out.print("Enter something to add to your TreeSet: ");
         Scanner additem = new Scanner(System.in);
         String addthing = additem.nextLine();
@@ -82,7 +82,7 @@ public class Tree {
         this.runListMenu();
     }
 
-    private void treerem() {
+    private void treerem() throws Exception {
         System.out.print("Enter something to remove from your TreeSet: ");
         Scanner remitem = new Scanner(System.in);
         String remthing = remitem.nextLine();
@@ -95,7 +95,7 @@ public class Tree {
         this.runListMenu();
     }
 
-    private void retmenu() {
+    private void retmenu() throws Exception {
         //Create Menu
         ColMenuView colMenuView = new ColMenuView();
 

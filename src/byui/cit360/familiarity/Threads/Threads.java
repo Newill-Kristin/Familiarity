@@ -9,7 +9,7 @@ public class Threads {
 
     private static Scanner input = new Scanner(System.in);
 
-    public void runThreadMenu() {
+    public void runThreadMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -44,7 +44,7 @@ public class Threads {
         }
     }
 
-    private void demo() {
+    private void demo() throws Exception {
 
         //Trigger New Demo
         ThreadDemo aDemo = new ThreadDemo();
@@ -57,7 +57,7 @@ public class Threads {
 
     }
 
-    private void retmenu () {
+    private void retmenu () throws Exception {
         //Create Menu
         ThreadMenuView threadMenuView = new ThreadMenuView();
 

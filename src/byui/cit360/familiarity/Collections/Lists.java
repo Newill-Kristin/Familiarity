@@ -13,7 +13,7 @@ public class Lists {
     private static Scanner input = new Scanner(System.in);
     List<String> demoList1 = new ArrayList<>();
 
-    public void listCol() {
+    public void listCol() throws Exception {
 
 
         System.out.println("Lets make a list! ");
@@ -30,7 +30,7 @@ public class Lists {
         this.runListMenu();
     }
 
-    public void runListMenu() {
+    public void runListMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -81,7 +81,7 @@ public class Lists {
     }
 
 
-    private void listadd() {
+    private void listadd() throws Exception {
         System.out.print("Enter something to add to your list: ");
         Scanner additem = new Scanner(System.in);
         String addthing = additem.nextLine();
@@ -94,7 +94,7 @@ public class Lists {
         this.runListMenu();
         }
 
-    private void listmod() {
+    private void listmod() throws Exception {
         System.out.print("Enter the list number of what you to modify from your list: ");
         Scanner moditem = new Scanner(System.in);
         int modnum = moditem.nextInt();
@@ -110,7 +110,7 @@ public class Lists {
         this.runListMenu();
         }
 
-    private void listrem() {
+    private void listrem() throws Exception {
         System.out.print("Enter something to remove from your list: ");
         Scanner remitem = new Scanner(System.in);
         String remthing = remitem.nextLine();
@@ -123,7 +123,7 @@ public class Lists {
         this.runListMenu();
     }
 
-    private void listsrt() {
+    private void listsrt() throws Exception {
         System.out.print("Sorting your list...");
         Collections.sort(demoList1);
 
@@ -134,7 +134,7 @@ public class Lists {
         this.runListMenu();
     }
 
-    private void retmenu() {
+    private void retmenu() throws Exception {
         //Create Menu
         ColMenuView colMenuView = new ColMenuView();
 

@@ -11,7 +11,7 @@ public class HibernateMenuView {
 
     private static Scanner input = new Scanner(System.in);
 
-    public void runHibMenu() {
+    public void runHibMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -46,7 +46,7 @@ public class HibernateMenuView {
         }
     }
 
-    private void demo() {
+    private void demo() throws Exception {
 
         //Trigger New Demo
         HibernateDemo aDemo = new HibernateDemo();
@@ -58,7 +58,7 @@ public class HibernateMenuView {
 
     }
 
-    private void retmm() {
+    private void retmm() throws Exception {
         //System.out.println("\n*** Main Menu ***");
 
         MainMenu mm = new MainMenu();

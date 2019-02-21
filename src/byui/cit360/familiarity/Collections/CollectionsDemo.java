@@ -7,7 +7,7 @@ package byui.cit360.familiarity.Collections;
 
 public class CollectionsDemo {
 
-    public static void collection() {
+    public static void collection() throws Exception {
 
         //Create Menu
         ColMenuView colMenuView = new ColMenuView();

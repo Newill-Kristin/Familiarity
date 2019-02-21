@@ -69,7 +69,7 @@ public class MvcMenuView {
 
     private static Scanner input = new Scanner(System.in);
 
-    public void runMVCMenu() {
+    public void runMVCMenu() throws Exception {
         //Display Menu
         System.out.print("\n"
                 + "\nWhat do you want to do now?"
@@ -104,7 +104,7 @@ public class MvcMenuView {
         }
     }
 
-    private void demo() {
+    private void demo() throws Exception {
 
         //Trigger New Demo
         MvcDemo aDemo = new MvcDemo();
@@ -116,7 +116,7 @@ public class MvcMenuView {
 
     }
 
-    private void retmm() {
+    private void retmm() throws Exception {
         //System.out.println("\n*** Main Menu ***");
 
         MainMenu mm = new MainMenu();

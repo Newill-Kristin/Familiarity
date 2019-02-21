@@ -17,7 +17,7 @@ public class HibernateDemo {
 
     private static Scanner input = new Scanner(System.in);
 
-    public void hibDemo() {
+    public void hibDemo() throws Exception {
 
         Session hs = HibernateUtils.getSessionFactory().openSession();
 
@@ -31,7 +31,6 @@ public class HibernateDemo {
         for (Contact con : list) {
             System.out.println("\n" + con.getFirstName() + " " + con.getLastName()
                     + "\n " + con.getAdd1()
-                    + "\n" + con.getAdd2()
                     + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
                     + "\n" + con.getTele() + "\n");
         }
@@ -42,7 +41,6 @@ public class HibernateDemo {
         Contact con2 = hs.load(Contact.class, 2);
         System.out.println("\n" + con2.getFirstName() + " " + con2.getLastName()
                 + "\n " + con2.getAdd1()
-                + "\n" + con2.getAdd2()
                 + "\n" + con2.getCity() + ", " + con2.getState() + " " + con2.getZip()
                 + "\n" + con2.getTele() + "\n");
 
@@ -63,7 +61,6 @@ public class HibernateDemo {
 
         System.out.println("\n" + con3.getFirstName() + " " + con3.getLastName()
                 + "\n " + con3.getAdd1()
-                + "\n" + con3.getAdd2()
                 + "\n" + con3.getCity() + ", " + con3.getState() + " " + con3.getZip()
                 + "\n" + con3.getTele() + "\n");
 
@@ -96,8 +93,7 @@ public class HibernateDemo {
         con5.setId(4);
         con5.setFirstName("Mama");
         con5.setLastName("Claus");
-        con5.setAdd1("1 North Pole Dr");
-        con5.setAdd2("Box 4646");
+        con5.setAdd1("1 North Pole Dr Box 4646");
         con5.setCity("Winterville");
         con5.setState("NP");
         con5.setZip("43433");
@@ -109,7 +105,6 @@ public class HibernateDemo {
 
         System.out.println("\n" + con5.getFirstName() + " " + con5.getLastName()
                 + "\n " + con5.getAdd1()
-                + "\n" + con5.getAdd2()
                 + "\n" + con5.getCity() + ", " + con5.getState() + " " + con5.getZip()
                 + "\n" + con5.getTele() + "\n");
 
@@ -134,7 +129,7 @@ public class HibernateDemo {
 
     }
 
-    private void endDemo() {
+    private void endDemo() throws Exception {
         HibernateMenuView hib1 = new HibernateMenuView();
 
         hib1.runHibMenu();

@@ -2,6 +2,7 @@ package byui.cit360.familiarity.view;
 
 import byui.cit360.familiarity.Collections.CollectionsDemo;
 import byui.cit360.familiarity.Hibernate.HibernateMenuView;
+import byui.cit360.familiarity.JSON.JsonDemo;
 import byui.cit360.familiarity.Mvc.MvcMenuView;
 import byui.cit360.familiarity.Threads.ThreadsDemo;
 
@@ -16,7 +17,7 @@ public class MainMenu {
 
     // Output options to work with
 
-    public void mainMenu() {
+    public void mainMenu() throws Exception {
 
         //Display mainMenu
         System.out.print("\n"
@@ -60,8 +61,8 @@ public class MainMenu {
                 this.json(); // Trigger JSON
             }
             break;
-            case "N": {
-                this.android(); // Trigger Android HttpUrlConnection
+            case "U": {
+                this.url(); // Trigger HttpUrlConnection
             }
             break;
             case "A": {
@@ -84,14 +85,14 @@ public class MainMenu {
     }
 
 
-    private void col() {
+    private void col() throws Exception {
         //Trigger CollectionsDemo
         CollectionsDemo collectionsDemo = new CollectionsDemo();
 
         collectionsDemo.collection();
     }
 
-    private void thread() {
+    private void thread() throws Exception {
         //System.out.println("\n*** ThreadsDemo, Executors, and Runnables Demo ***");
 
         ThreadsDemo threadsDemo = new ThreadsDemo();
@@ -100,7 +101,7 @@ public class MainMenu {
 
     }
 
-    private void mvc() {
+    private void mvc() throws Exception {
         //System.out.println("\n*** MVC Demo ***");
 
         MvcMenuView mvc1 = new MvcMenuView();
@@ -109,7 +110,7 @@ public class MainMenu {
 
     }
 
-    private void hibernate() {
+    private void hibernate() throws Exception  {
         //System.out.println("\n*** Hibernate Demo ***");
 
         HibernateMenuView hib1 = new HibernateMenuView();
@@ -118,22 +119,25 @@ public class MainMenu {
 
     }
 
-    private void json() {
-        System.out.println("\n*** JSON Demo ***");
+    private void json() throws Exception {
+        //System.out.println("\n*** JSON Demo ***");
+
+        JsonDemo jd = new JsonDemo();
+        jd.jsonMenu();
 
     }
 
-    private void android() {
-        System.out.println("\n*** Android HttpUrlConnection Demo ***");
+    private void url()  throws Exception {
+        System.out.println("\n*** HttpUrlConnection Demo ***");
 
     }
 
-    private void acp() {
+    private void acp()  throws Exception {
         System.out.println("\n*** Application Controller Pattern Demo ***");
 
     }
 
-    private void junit() {
+    private void junit() throws Exception  {
         System.out.println("\n*** JUnit & System Level Test Demo ***");
 
     }
