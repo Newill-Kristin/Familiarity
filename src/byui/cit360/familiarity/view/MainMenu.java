@@ -84,7 +84,7 @@ public class MainMenu {
         //Trigger CollectionsDemo
         CollectionsDemo collectionsDemo = new CollectionsDemo();
 
-        collectionsDemo.collection();
+        CollectionsDemo.collection();
     }
 
     private void thread() throws Exception {
@@ -92,7 +92,7 @@ public class MainMenu {
 
         ThreadsDemo threadsDemo = new ThreadsDemo();
 
-        threadsDemo.threads();
+        ThreadsDemo.threads();
 
     }
 

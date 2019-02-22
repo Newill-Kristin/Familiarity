@@ -7,21 +7,24 @@ import byui.cit360.familiarity.view.MainMenu;
  */
 public class HttpDispatcher {
     private HttpNames httpNames;
-    private HttpDetails httpDetails;
-    private HttpOU httpOU;
+    private HttpAcct httpAcct;
+    private HttpDet httpDet;
 
     public HttpDispatcher() {
         httpNames = new HttpNames();
-        httpDetails = new HttpDetails();
-        httpOU = new HttpOU();
+        httpAcct = new HttpAcct();
+        httpDet = new HttpDet();
     }
 
     public void dispatch(String request) throws Exception {
         if (request.equalsIgnoreCase("N")) {
             httpNames.nameDemo();
         }
+        if (request.equalsIgnoreCase("A")) {
+            httpAcct.acctDemo();
+        }
         if (request.equalsIgnoreCase("D")) {
-            httpDetails.detDemo();
+            httpDet.detDemo();
         }
         if (request.equalsIgnoreCase("M")) {
             MainMenu mm = new MainMenu();

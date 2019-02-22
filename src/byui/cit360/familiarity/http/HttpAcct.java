@@ -2,9 +2,28 @@ package byui.cit360.familiarity.http;
 
 import java.util.*;
 
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import javax.json.Json;
+import javax.json.JsonValue;
+import javax.net.ssl.HttpsURLConnection;
 import org.jsoup.*;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Document;
+import org.json.JSONObject;
+import javax.json.JsonWriter;
 import org.jsoup.select.Elements;
 
 /**
@@ -12,19 +31,19 @@ import org.jsoup.select.Elements;
  */
 
 //Display list of First & Last Names and SAM Accounts from http://www.flameandshadow.net/School/hpdata.html
-public class HttpDetails {
 
-    public void detDemo() throws Exception
+public class HttpAcct {
+
+    public void acctDemo() throws Exception
     {
-        HttpDetails httpDetails = new HttpDetails();
+        HttpAcct httpAcct = new HttpAcct();
 
         System.out.println("\nRequest for Page Title");
-        httpDetails.httpGet();
+        httpAcct.httpGet();
 
-        httpDetails.nameSet();
+        httpAcct.nameSet();
 
-        System.out.println("\nRequest for Names, and SAM Account that match criteria");
-        httpDetails.httpSearch();
+        httpAcct.httpSearch();
 
         HttpDemo http = new HttpDemo();
         http.httpMenu();
@@ -34,7 +53,7 @@ public class HttpDetails {
         // Page Title
         private void httpGet() throws Exception {
 
-        String url = "byui.cit360.familiarity.http://www.flameandshadow.net/School/hpdata.html";
+        String url = "http://www.flameandshadow.net/School/hpdata.html";
 
         Document doc = Jsoup.connect(url).get();
         String title = doc.title();
@@ -45,7 +64,7 @@ public class HttpDetails {
     //create a set of last names to use in search
     private void nameSet () throws Exception {
 
-        String url = "byui.cit360.familiarity.http://www.flameandshadow.net/School/hpdata.html";
+        String url = "http://www.flameandshadow.net/School/hpdata.html";
 
         Document doc = Jsoup.connect(url).get();
 
@@ -60,23 +79,25 @@ public class HttpDetails {
             nameSet.add(cols.get(5).text());
         }
         int p = 0;
-        System.out.println("Search for one of the following to see Name and SAM Account: \n");
+
         Iterator<String> itr = nameSet.iterator();
         while(itr.hasNext()) {
             System.out.println(itr.next());
         }
+        System.out.println("Search for one of the previous to see Name and SAM Account: (Case Sensitive)\n");
     }
 
 
     //Search
     private void httpSearch() throws Exception {
 
-        String url = "byui.cit360.familiarity.http://www.flameandshadow.net/School/hpdata.html";
+        System.out.println("\nRequest for Names, and SAM Account that match criteria");
+
+        String url = "http://www.flameandshadow.net/School/hpdata.html";
 
         Document doc = Jsoup.connect(url).get();
 
-        Map<String, List<String>> demomap2 = new HashMap<String, List<String>>();
-        ArrayList<String> det = new ArrayList<>();
+        HashMap<String, String> demomap2 = new HashMap<>();
 
         Element table = doc.select("table").get(0); //select the first table.
         Elements rows = table.select("tr");
@@ -90,17 +111,9 @@ public class HttpDetails {
 
             String key = cols.get(4).text();
             String name1 = cols.get(2).text();
-            String pn = cols.get(7).text();
-            String mo = cols.get(3).text();
 
             if (cols.get(5).text().equals(namepick)) {
-                det.add(cols.get(2).text());
-                det.add(cols.get(7).text());
-                det.add(cols.get(3).text());
-            }
-
-            if (cols.get(5).text().equals(namepick)) {
-                demomap2.put(key, det);
+                demomap2.put(key, name1);
             }
         }
 

@@ -1,11 +1,8 @@
 package byui.cit360.familiarity.JSON;
 
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+
+import java.io.PrintWriter;
 
 /**
  * Created by Kristin Newill (aingealfire) on 2/20/2019.

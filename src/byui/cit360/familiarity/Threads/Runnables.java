@@ -50,7 +50,7 @@ public class Runnables {
         RunnableDemo aDemo = new RunnableDemo();
 
         //Run Demo
-        aDemo.runTest();
+        RunnableDemo.runTest();
 
         this.runRunnablesMenu();
 
