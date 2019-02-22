@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML Transitional 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML Transitional 4.01//EN" "byui.cit360.familiarity.http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta byui.cit360.familiarity.http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta byui.cit360.familiarity.http-equiv="Content-Style-Type" content="text/css">
   <title>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0 | Open Source Initiative</title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="824.42">

@@ -17,7 +17,7 @@
     <licenses>
         <license>
             <name>Eclipse Public License 1.0</name>
-            <url>http://www.eclipse.org/legal/epl-v10.html</url>
+            <url>byui.cit360.familiarity.http://www.eclipse.org/legal/epl-v10.html</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -295,7 +295,7 @@
                     <javaApiLinks>
                         <property>
                             <name>api_${jdkVersion}</name>
-                            <value>http://docs.oracle.com/javase/${jdkVersion}.0/docs/api/</value>
+                            <value>byui.cit360.familiarity.http://docs.oracle.com/javase/${jdkVersion}.0/docs/api/</value>
                         </property>
                     </javaApiLinks>
                     <excludePackageNames>junit.*,*.internal.*</excludePackageNames>
@@ -399,7 +399,7 @@
                     <javaApiLinks>
                         <property>
                             <name>api_${jdkVersion}</name>
-                            <value>http://docs.oracle.com/javase/${jdkVersion}.0/docs/api/</value>
+                            <value>byui.cit360.familiarity.http://docs.oracle.com/javase/${jdkVersion}.0/docs/api/</value>
                         </property>
                     </javaApiLinks>
                     <excludePackageNames>junit.*,*.internal.*</excludePackageNames>
