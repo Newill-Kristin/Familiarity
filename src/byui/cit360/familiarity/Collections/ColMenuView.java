@@ -2,7 +2,6 @@ package byui.cit360.familiarity.Collections;
 
 import byui.cit360.familiarity.view.MainMenu;
 
-
 import java.util.Scanner;
 
 /**

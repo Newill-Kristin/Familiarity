@@ -7,8 +7,6 @@ import org.hibernate.query.Query;
 import java.util.List;
 import java.util.Scanner;
 
-import static byui.cit360.familiarity.Hibernate.HibernateMenuView.*;
-
 /*
  * Created by Kristin Newill (aingealfire) on 2/5/2019.
  */

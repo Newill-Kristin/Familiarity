@@ -1,22 +1,17 @@
 package byui.cit360.familiarity.http;
 
-import javax.persistence.Id;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
 /**
  * Created by Kristin Newill (aingealfire) on 2/22/2019.
  */
 public class HttpUser {
 
+    private String sam;
     private String name;
     private String mo;
-    private String sam;
     private String sn;
     private String gn;
     private String pn;
-    private String ou;
+
 
 
     public String getSam() {
@@ -30,9 +25,11 @@ public class HttpUser {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getMo() {
         return mo;
     }
@@ -63,14 +60,6 @@ public class HttpUser {
 
     public void setPn(String pn) {
         this.pn = pn;
-    }
-
-    public String getOu() {
-        return ou;
-    }
-
-    public void setOu(String ou) {
-        this.ou = ou;
     }
 
 

@@ -1,12 +1,9 @@
 package byui.cit360.familiarity.JSON;
 
-import java.io.FileReader;
-import java.util.Iterator;
-import java.util.Map;
-
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.*;
+import org.json.simple.parser.JSONParser;
+
+import java.io.FileReader;
 /**
  * Created by Kristin Newill (aingealfire) on 2/20/2019.
  */

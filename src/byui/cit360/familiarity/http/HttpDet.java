@@ -1,22 +1,14 @@
 package byui.cit360.familiarity.http;
 
-import java.io.*;
-import java.util.*;
-
-import byui.cit360.familiarity.JSON.JsonDemo;
-import com.fasterxml.jackson.core.JsonFactory;
-import org.json.simple.*;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-import org.jsoup.*;
-import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Document;
 import org.json.JSONObject;
-import org.json.JSONArray;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import javax.json.Json;
-import javax.json.stream.JsonParser;
+
+import java.io.PrintWriter;
+import java.util.Iterator;
+import java.util.TreeSet;
 
 
 /**
@@ -99,20 +91,18 @@ public class HttpDet {
             for (Element row : table.select("tr")) {
                 JSONObject jObj = new JSONObject();
                 Elements tds = row.select("td");
+                String SAM = tds.get(4).text();
                 String Name = tds.get(2).text();
                 String MemOf = tds.get(3).text();
-                String SAM = tds.get(4).text();
                 String SN = tds.get(5).text();
                 String GN = tds.get(6).text();
                 String PN = tds.get(7).text();
-                String OU = tds.get(8).text();
                 jObj.put("SAM ID", SAM);
                 jObj.put("Name", Name);
                 jObj.put("Group", MemOf);
                 jObj.put("Last Name", SN);
                 jObj.put("First Name", GN);
                 jObj.put("Email", PN);
-                jObj.put("OU", OU);
                 jpObj.put(SAM, jObj);
             }
 
@@ -125,43 +115,20 @@ public class HttpDet {
     //Search
     private void searchJson() throws Exception {
 
-        System.out.println("\nRequest for Details that match criteria");
+        //System.out.println("\nRequest for Details that match criteria\n");
 
-        ObjectMapper obMap = new ObjectMapper();
+        HttpJackMap hjm = new HttpJackMap();
+        hjm.httpSearch();
 
-        File file = new File("hpdata.json");
 
-        try {
-            HttpUser jOb = obMap.readValue(file, HttpUser.class); //keeps tripping up here... Will jump to menu, and not display anything.
-
-            System.out.println("User: " + jOb.getName());
-            System.out.println("SAM ID: " + jOb.getSam());
-            System.out.println("Email: " + jOb.getPn());
-            System.out.println("Group: " + jOb.getMo());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        //System.out.println("\nJSON RESULTS SHOULD BE HERE!\n");
 
         //Display Menu options
         System.out.println("\n*** Back to Menu ***");
-        JsonDemo jd = new JsonDemo();
-        jd.jsonMenu();
+        HttpDemo http = new HttpDemo();
+        http.httpMenu();
 
     }
 
 }
 
-
-
-
-/*
-
-        // bring in file file
-        Object obj = new JSONParser().parse(new FileReader("hpdata.json"));
-
-
-        // to JSONObject
-        org.json.simple.JSONObject jo = (org.json.simple.JSONObject) obj;
-
-*/

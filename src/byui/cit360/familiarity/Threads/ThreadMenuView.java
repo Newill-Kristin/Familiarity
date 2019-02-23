@@ -1,8 +1,5 @@
 package byui.cit360.familiarity.Threads;
 
-import byui.cit360.familiarity.Threads.Executors;
-import byui.cit360.familiarity.Threads.Runnables;
-import byui.cit360.familiarity.Threads.Threads;
 import byui.cit360.familiarity.view.MainMenu;
 
 import java.util.Scanner;

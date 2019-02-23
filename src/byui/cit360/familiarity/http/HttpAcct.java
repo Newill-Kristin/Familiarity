@@ -1,30 +1,14 @@
 package byui.cit360.familiarity.http;
 
-import java.util.*;
-
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import javax.json.Json;
-import javax.json.JsonValue;
-import javax.net.ssl.HttpsURLConnection;
-import org.jsoup.*;
-import org.jsoup.nodes.Element;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.json.JSONObject;
-import javax.json.JsonWriter;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.TreeSet;
 
 /**
  * Created by Kristin Newill (aingealfire) on 2/21/2019.
@@ -84,14 +68,14 @@ public class HttpAcct {
         while(itr.hasNext()) {
             System.out.println(itr.next());
         }
-        System.out.println("Search for one of the previous to see Name and SAM Account: (Case Sensitive)\n");
+        System.out.println("Search for one of the previous to see Name and SAM ID: (Case Sensitive)\n");
     }
 
 
     //Search
     private void httpSearch() throws Exception {
 
-        System.out.println("\nRequest for Names, and SAM Account that match criteria");
+        System.out.println("\nRequest for Names, and SAM ID that match criteria");
 
         String url = "http://www.flameandshadow.net/School/hpdata.html";
 
@@ -121,7 +105,7 @@ public class HttpAcct {
         System.out.println("Your search for " + namepick + " from the list resulted in " + num + " users. \n");
         System.out.println("The results are:");
         for (String keys : demomap2.keySet()) {
-            System.out.println("SAM Account: " + keys + " Name: " + demomap2.get(keys));
+            System.out.println("SAM ID: " + keys + "    Name: " + demomap2.get(keys));
         }
 
     }

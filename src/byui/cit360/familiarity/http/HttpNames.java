@@ -1,30 +1,14 @@
 package byui.cit360.familiarity.http;
 
-import java.util.*;
-
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import javax.json.Json;
-import javax.json.JsonValue;
-import javax.net.ssl.HttpsURLConnection;
-import org.jsoup.*;
-import org.jsoup.nodes.Element;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.json.JSONObject;
-import javax.json.JsonWriter;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.TreeSet;
 
 /**
  * Created by Kristin Newill (aingealfire) on 2/21/2019.
