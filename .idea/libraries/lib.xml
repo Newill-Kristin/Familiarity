@@ -22,7 +22,6 @@
       <root url="jar://D:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.14.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/junit/junit/4.12/junit-4.12.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/java-json.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/json-simple-1.1.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/jsoup-1.11.3.jar!/" />
