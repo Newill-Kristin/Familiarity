@@ -29,7 +29,6 @@ public class MainMenu {
                 + "\nH: Hibernate"
                 + "\nQ: JSON"
                 + "\nN: HttpUrlConnection"
-                + "\nJ: JUnit & System Level Tests"
                 + "\nX: Exit"
                 + "\n"
                 + "\nPlease choose an Option: ");
@@ -62,10 +61,6 @@ public class MainMenu {
             break;
             case "N": {
                 this.url(); // Trigger HttpUrlConnection
-            }
-            break;
-            case "J": {
-                this.junit(); // Trigger JUnit
             }
             break;
             case "X": {
@@ -127,11 +122,6 @@ public class MainMenu {
 
         HttpDemo http = new HttpDemo();
         http.httpMenu();
-    }
-
-    private void junit() throws Exception  {
-        System.out.println("\n*** JUnit & System Level Test Demo ***");
-
     }
 
     private void exit() {
