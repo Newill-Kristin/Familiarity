@@ -5,6 +5,7 @@ import byui.cit360.familiarity.Hibernate.HibernateMenuView;
 import byui.cit360.familiarity.JSON.JsonDemo;
 import byui.cit360.familiarity.Mvc.MvcMenuView;
 import byui.cit360.familiarity.Threads.ThreadsDemo;
+import byui.cit360.familiarity.acp.AcpDemo;
 import byui.cit360.familiarity.http.HttpDemo;
 
 import java.util.Scanner;
@@ -29,6 +30,7 @@ public class MainMenu {
                 + "\nH: Hibernate"
                 + "\nQ: JSON"
                 + "\nN: HttpUrlConnection"
+                + "\nA: ACP Demo"
                 + "\nX: Exit"
                 + "\n"
                 + "\nPlease choose an Option: ");
@@ -61,6 +63,10 @@ public class MainMenu {
             break;
             case "N": {
                 this.url(); // Trigger HttpUrlConnection
+            }
+            break;
+            case "A": {
+                this.acp(); // Trigger ACP demo
             }
             break;
             case "X": {
@@ -122,6 +128,13 @@ public class MainMenu {
 
         HttpDemo http = new HttpDemo();
         http.httpMenu();
+    }
+
+    private void acp()  throws Exception {
+        //System.out.println("\n*** HttpUrlConnection Demo ***");
+
+        AcpDemo acp = new AcpDemo();
+        acp.acpDemo();
     }
 
     private void exit() {

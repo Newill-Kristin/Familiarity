@@ -9,10 +9,16 @@
 
 <html>
   <head>
-    <title>Servelet Demo</title>
+    <title>Familiarity Demo</title>
   </head>
   <body>
-    <h1>I Am Servlet, Hear me roar!</h1>
-    <p>To make me go, click <a href="${pageContext.request.contextPath}/ServletDemo">here</a></p>
+
+  <a href="studentView.do?id=10">Show Student Information</a>
+
+
+
+
+
+    <p>I also have a servlet demo if you click <a href="${pageContext.request.contextPath}/ServletDemo">here</a></p>
   </body>
 </html>
